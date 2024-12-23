@@ -28,8 +28,8 @@ const VerifyEmail = async (
           user: process.env.EMAIL_USERNAME as string, // Your email address
           pass: process.env.EMAIL_PASSWORD as string, // Your email password or app-specific password
         },
-        logger: true, // Enable logging (useful for debugging)
-        debug: true, // Enable debug mode
+        // logger: true, // Enable logging (useful for debugging)
+        // debug: true, // Enable debug mode
       });
 
       // Define email options
@@ -40,7 +40,7 @@ const VerifyEmail = async (
         html: `
           <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
               <div style="max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-                  <h2 style="text-align: center; color: #4CAF50;">Welcome to Medecro.ai!</h2>
+                  <h2 style="text-align: center; color: #4CAF50;">Welcome to Mystery Feedback!</h2>
                   <p>Hi <strong>${username}</strong>,</p>
                   <p>Thank you for registering on Mystery Feedback! Please use the OTP below to verify your email:</p>
                   <div style="text-align: center; margin: 20px 0;">
@@ -48,7 +48,7 @@ const VerifyEmail = async (
                   </div>
                   <p>If you did not request this registration, please ignore this email.</p>
                   <p style="text-align: center; color: #888;">Have a great day!</p>
-                  <p style="text-align: center;"> 🦷Medecro.ai Team🦷</p>
+                  <p style="text-align: center;"> 🦷Mystery Feedback Team🦷</p>
               </div>
           </div>
         `,
